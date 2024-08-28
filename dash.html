@@ -17,7 +17,6 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- Optional JavaScript; choose one of the two! -->
-
     <!-- Option 1: Bootstrap Bundle with Popper.js -->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.bundle.min.js"
         integrity="sha384-BOsAfwzjNJHrJ8cZidOg56tcQWfp6y72vEJ8xQ9w6Quywb24iOsW913URv1IS4GD" crossorigin="anonymous">
@@ -52,7 +51,7 @@
                                 class="fa fa-search"></i></button>
                     </div>
                 </form>
-                <a href="#" class="btn btn-sm btn-warning">Log Out</a>
+                <a href="#" class="btn btn-sm btn-warning" id="logoutBtn">Log Out</a>
             </div>
         </div>
     </nav>
@@ -64,7 +63,7 @@
             <div class="col-lg-4 col-md-6 mb-4">
                 <div class="card border-primary">
                     <div class="card-body text-center">
-                        <h4 class="card-title mb-0">245 <small class="text-muted">Employees</small></h4>
+                        <h4 class="card-title mb-0">7 <small class="text-muted">Employees</small></h4>
                     </div>
                     <div class="list-group list-group-flush">
                         <a href="employees-list.html" class="list-group-item list-group-item-action list-group-item-primary">View All</a>
@@ -74,7 +73,7 @@
             <div class="col-lg-4 col-md-6 mb-4">
                 <div class="card border-success">
                     <div class="card-body text-center">
-                        <h4 class="card-title mb-0">25 <small class="text-muted">Jobs</small></h4>
+                        <h4 class="card-title mb-0">5 <small class="text-muted">Jobs</small></h4>
                     </div>
                     <div class="list-group list-group-flush">
                         <a href="jobs-list.html" class="list-group-item list-group-item-action list-group-item-success">View All</a>
@@ -89,6 +88,15 @@
             // Redirect to login if not logged in
             window.location.href = 'login.html';
         }
+
+        // Logout functionality
+        document.getElementById('logoutBtn').addEventListener('click', function() {
+            // Clear login state
+            localStorage.removeItem('loggedIn');
+            
+            // Redirect to login page
+            window.location.href = '/index.html';
+        });
     </script>
     <!-- dashboard contents end -->
 </body>

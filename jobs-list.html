@@ -57,8 +57,7 @@
                                 class="fa fa-search"></i></button>
                     </div>
                 </form>
-
-                <a href="#" class="btn btn-sm btn-warning ml-3">Log Out</a>
+                <a href="#" class="btn btn-sm btn-warning ms-3" id="logoutBtn">Log Out</a>
             </div>
         </div>
     </nav>
@@ -195,6 +194,14 @@
         </div>
     </div>
     <!-- Edit Details Modal end -->
+
+    <!-- Custom JavaScript -->
+    <script>
+        document.getElementById('logoutBtn').addEventListener('click', function () {
+            // Redirect to login page
+            window.location.href = '/index.html'; // Update this with the actual path to your login page
+        });
+    </script>
 </body>
 
 </html>

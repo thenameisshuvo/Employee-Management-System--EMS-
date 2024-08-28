@@ -58,7 +58,7 @@
                     </div>
                 </form>
 
-                <a href="#" class="btn btn-sm btn-warning ml-3">Log Out</a>
+                <a href="#" class="btn btn-sm btn-warning ms-3" id="logoutBtn">Log Out</a>
             </div>
         </div>
     </nav>
@@ -96,7 +96,7 @@
                                 onclick="confirm('Are you sure you want to delete \'Nay Lin\'?')">Delete</a></td>
                     </tr>
                     <tr>
-                        <td>1</td>
+                        <td>2</td>
                         <td>Shamuel Islam Maruf</td>
                         <td>Shams@gmail.com</td>
                         <td><a href="#" class="btn btn-sm btn-block btn-info">Details</a></td>
@@ -104,7 +104,7 @@
                         <td><a href="#" class="btn btn-sm btn-block btn-danger">Delete</a></td>
                     </tr>
                     <tr>
-                        <td>1</td>
+                        <td>3</td>
                         <td>Mounota khan</td>
                         <td>Mounota@gmail.com</td>
                         <td><a href="#" class="btn btn-sm btn-block btn-info">Details</a></td>
@@ -112,7 +112,7 @@
                         <td><a href="#" class="btn btn-sm btn-block btn-danger">Delete</a></td>
                     </tr>
                     <tr>
-                        <td>1</td>
+                        <td>4</td>
                         <td>Sarah Razia</td>
                         <td>Sarah@gmail.com</td>
                         <td><a href="#" class="btn btn-sm btn-block btn-info">Details</a></td>
@@ -188,7 +188,7 @@
                         </tr>
                         <tr>
                             <th>Name</th>
-                            <td>Tanvir Rahman SHuvo</td>
+                            <td>Tanvir Rahman Shuvo</td>
                         </tr>
                         <tr>
                             <th>Email ID</th>
@@ -251,6 +251,13 @@
             </div>
         </div>
     </div>
+    <!-- Custom JavaScript -->
+    <script>
+        document.getElementById('logoutBtn').addEventListener('click', function () {
+            // Redirect to login page
+            window.location.href = '/index.html'; // Update this with the actual path to your login page
+        });
+    </script>
     <!-- Edit Details Modal end -->
 </body>
 
