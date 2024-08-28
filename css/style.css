@@ -124,13 +124,57 @@ h2 {
     background-color: #0056b3;
 }
 
-/* Style for <h1> */
+
+/* General body styling */
+body.login {
+    background-color: gainsboro;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Centering container */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Full viewport height */
+}
+
+/* Heading styling */
 h1 {
-    font-family: 'Poppins', sans-serif; /* or any other font family */
-    font-size: 2.5rem; /* Adjust size as needed */
-    font-weight: 700; /* Make it bold */
-    color: #333; /* Dark gray color for readability */
-    text-align: center; /* Center-align the text */
-    margin-top: 20px; /* Space above the heading */
-    margin-bottom: 480px; /* Space below the heading */
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #333;
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* Logo styling */
+.logo {
+    width: 150px; /* Adjust size as needed */
+    height: auto;
+    margin-bottom: 20px;
+}
+
+/* Login form styling */
+.login-form {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 100%;
+}
+
+/* Form control styling */
+.form-control {
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+/* Button styling */
+.btn-primary {
+    width: 100%;
+    border-radius: 4px;
+    padding: 10px;
 }
