@@ -89,6 +89,13 @@
             </div>
         </div>
     </div>
+    <script>
+        // Check if the user is logged in
+        if (localStorage.getItem('loggedIn') !== 'true') {
+            // Redirect to login if not logged in
+            window.location.href = 'login.html';
+        }
+    </script>
     <!-- dashboard contents end -->
 </body>
 
