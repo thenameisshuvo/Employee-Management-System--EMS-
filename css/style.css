@@ -10,3 +10,54 @@ body.login {
     box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
     border: 0px;
 }
+
+
+.navbar {
+    background-color: #2c3e50; /* Dark navy color */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #ecf0f1; /* Light gray */
+}
+
+.nav-link {
+    color: #ecf0f1; /* Light gray */
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+    color: #1abc9c; /* Vibrant teal */
+}
+
+.btn-warning {
+    background-color: #e67e22;
+    border-color: #e67e22;
+}
+
+.btn-warning:hover {
+    background-color: #d35400;
+    border-color: #d35400;
+}
+
+.table {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.table th {
+    background-color: #34495e; /* Dark gray-blue */
+    color: #ecf0f1; /* Light gray */
+}
+
+.table td {
+    background-color: #ffffff; /* White */
+    color: #2c3e50; /* Dark navy */
+}
+
+.table-hover tbody tr:hover {
+    background-color: #f1f1f1;
+}
