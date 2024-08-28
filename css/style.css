@@ -72,109 +72,100 @@ body.login {
     border-color: #2980b9; /* Blue */
     box-shadow: 0px 0px 8px rgba(41, 128, 185, 0.5);
 }
-
+/* General body styling */
 body.login {
-    background-color: #f8f9fa;
+    background-color: #e9ecef; /* Light background for a modern look */
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
 }
 
+/* Container for login form and logo */
 .login-container {
     background-color: #ffffff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    border-radius: 12px; /* More rounded corners */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Enhanced shadow */
     width: 100%;
-    max-width: 400px;
-}
-
-h2 {
-    margin-bottom: 20px;
+    max-width: 450px; /* Slightly larger max width */
     text-align: center;
-}
-
-.form-group {
-    margin-bottom: 15px;
-}
-
-.form-label {
-    font-weight: bold;
-}
-
-.form-control {
-    border-radius: 4px;
-}
-
-.btn-primary {
-    width: 100%;
-    padding: 10px;
-    border-radius: 4px;
-    background-color: #007bff;
-    border: none;
-    color: #fff;
-    font-size: 16px;
-    cursor: pointer;
-}
-
-.btn-primary:hover {
-    background-color: #0056b3;
-}
-
-
-/* General body styling */
-body.login {
-    background-color: gainsboro;
-    font-family: 'Poppins', sans-serif;
-}
-
-/* Centering container */
-.container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh; /* Full viewport height */
 }
 
 /* Heading styling */
 h1 {
-    font-size: 2.5rem;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem; /* Larger font size for more impact */
     font-weight: 700;
-    color: #333;
-    text-align: center;
-    margin: 20px 0;
+    color: #343a40; /* Darker color for better readability */
+    margin-bottom: 20px;
 }
 
 /* Logo styling */
 .logo {
-    width: 150px; /* Adjust size as needed */
+    width: 100%;
+    max-width: 180px; /* Adjust size as needed */
     height: auto;
-    margin-bottom: 20px;
+    margin: 0 auto 20px auto; /* Centered and spaced */
 }
 
-/* Login form styling */
-.login-form {
-    background: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    max-width: 400px;
-    width: 100%;
+/* Form group styling */
+.form-group {
+    margin-bottom: 20px; /* Increased spacing */
+}
+
+/* Form label styling */
+.form-label {
+    font-weight: 500; /* Slightly lighter font weight */
+    color: #495057; /* Subtle color for labels */
 }
 
 /* Form control styling */
 .form-control {
-    border-radius: 4px;
-    margin-bottom: 10px;
+    border-radius: 6px; /* Slightly more rounded corners */
+    border: 1px solid #ced4da; /* Light border color */
+    padding: 10px; /* Increased padding */
+}
+
+/* Focus state for form controls */
+.form-control:focus {
+    border-color: #007bff; /* Blue border on focus */
+    box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.25); /* Blue shadow on focus */
 }
 
 /* Button styling */
 .btn-primary {
     width: 100%;
-    border-radius: 4px;
-    padding: 10px;
+    padding: 12px;
+    border-radius: 6px; /* More rounded corners */
+    background-color: #007bff;
+    border: none;
+    color: #fff;
+    font-size: 18px; /* Larger font size */
+    font-weight: 600; /* Slightly bolder text */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+/* Optional: Add a subtle animation to the form container */
+.login-container {
+    animation: fadeIn 0.8s ease-in-out; /* Fade-in effect */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
