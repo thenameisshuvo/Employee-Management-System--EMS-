@@ -5,36 +5,41 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Employee Management System</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css"
-        integrity="sha384-DhY6onE6f3zzKbjUPRc2hOzGAdEf4/Dz+WJwBvEYL/lkkIsI3ihufq9hk9K4lVoK" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/style.css">
 </head>
 
 <body>
-    <div class="login-container">
-        <h1>Employee Management System</h1>
-        <img src="/skill.png" alt="Company Logo" class="logo">
-        <h2>Login Panel</h2>
-        <form id="loginForm">
-            <div class="form-group mb-3">
-                <label for="username" class="form-label">Username:</label>
-                <input type="text" id="username" name="admin" class="form-control" required>
+    <div class="login-page">
+        <div class="login-card">
+            <div class="text-center">
+                <!-- Logo Section -->
+                <img src="/skill.png" alt="Brand Logo" class="logo">
+                
+                <!-- Brand Name -->
+                <h2 class="brand-name">Elite Protector</h2>
+                
+                <!-- Login Instructions -->
+                <p class="login-subheading">Your gateway to premium services</p>
             </div>
-            <div class="form-group mb-3">
-                <label for="password" class="form-label">Password:</label>
-                <input type="password" id="password" name="12345" class="form-control" required>
-            </div>
-            <button type="submit" class="btn btn-primary">Login</button>
-        </form>
+            <form id="loginForm" onsubmit="return validateLogin();">
+                <div class="form-group">
+                    <label for="username" class="form-label">Username</label>
+                    <input type="text" id="username" name="username" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="password" class="form-label">Password</label>
+                    <input type="password" id="password" name="password" class="form-control" required>
+                </div>
+                <button type="submit" class="btn btn-primary w-100">Login</button>
+            </form>
+            <footer class="text-center mt-4">
+                <a href="#" class="footer-link">Use 'admin' as username & '12345' as password</a>
+            </footer>
+        </div>
     </div>
 
-    <footer>
-        <h6>Use 'admin' as username & '12345' as password</h6>
-    </footer>
-
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.bundle.min.js"
-        integrity="sha384-BOsAfwzjNJHrJ8cZidOg56tcQWfp6y72vEJ8xQ9w6Quywb24iOsW913URv1IS4GD" crossorigin="anonymous">
-    </script>
     <script>
         document.getElementById('loginForm').addEventListener('submit', function(event) {
             event.preventDefault(); // Prevent form from submitting the traditional way
